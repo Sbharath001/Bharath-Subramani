@@ -1,26 +1,24 @@
 package bharath;
 
-class Encapsulation
-{
-	private String password;
-	public String getpassword()
-	{
-		return password;
-	}
-	public void setpassword()
-	{
-		String newpassword = " bharath@1234";
-		password = new String(newpassword);
-	}
+class Encapsulation {
+    private String password;
+
+    public String get_password() {  
+        return password;
+    }
+
+    public void set_password() { 
+        String new_password = "bharath@1234";  
+        password = new String(new_password);
+    }
 }
-class Username extends MusicPlayer
-{
-	protected void id()
-	{
-		final String User_id="Bharath S";
-		Encapsulation encap = new Encapsulation();
-		System.out.println("Login in = "+ User_id);
-		encap.setpassword();
-		System.out.println("password = "+encap.getpassword());
-	}
+
+class Username extends MusicPlayer {
+    protected void id() {
+        final String user_id = "Bharath S";  
+        Encapsulation encap = new Encapsulation();
+        System.out.println("Login in = " + user_id);
+        encap.set_password();  
+        System.out.println("Password = " + encap.get_password()); 
+    }
 }
