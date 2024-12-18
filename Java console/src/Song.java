@@ -7,10 +7,33 @@ enum Genre
 	JAZZ,
 	FOLK,
 	ROCK
+}package bharath;
+
+enum Genre {
+    POP,
+    HIPHOP,
+    JAZZ,
+    FOLK,
+    ROCK
 }
+
+class Song {
+    int song_id;       
+    String singer;
+    String song_name;      
+    Genre type;
+
+    Song(int id, String singer, String song_name, Genre type) {
+        this.song_id = id; 
+        this.singer = singer;
+        this.song_name = song_name;
+        this.type = type;
+    }
+}
+
 class Song
 {
-	int songID;
+	int song_iD;
 	String singer;
 	String song_name;
 	Genre type;
