@@ -1,25 +1,23 @@
 package bharath;
 
-class  choose extends Username
-{
-	public void Play()
-	{
-		System.out.println("Song is playing");
-	}
-	public void Pause()	
-	{
-			System.out.println("Song is Stop");
-	}
-	public void Nextsong()
-		{
-			System.out.println("next song");
-		}
-	public void Previoussong()
-	{
-		System.out.println("privious song");
-	}
-	public void Exit()
-	{
-			System.out.println("stop");
-	}
+class Choose extends Username {
+    public void play() {
+        System.out.println("Song is playing");
+    }
+
+    public void pause() {
+        System.out.println("Song is stopped");
+    }
+
+    public void next_song() {
+        System.out.println("Next song");
+    }
+
+    public void previous_song() {
+        System.out.println("Previous song");
+    }
+
+    public void exit() {
+        System.out.println("Stop");
+    }
 }
